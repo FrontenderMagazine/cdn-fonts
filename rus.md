@@ -8,7 +8,7 @@
 
 ## Конфигурация Apache 
 
-Настройки должны быть быть в `.htaccess` или `httpd.conf`:
+Настройки должны быть в `.htaccess` или `httpd.conf`:
 
     <FilesMatch ".(eot|ttf|otf|woff)">
         Header set Access-Control-Allow-Origin "*"
@@ -16,7 +16,7 @@
 
 ## Конфигурация Nginx 
 
-Настройки должны быть быть в `nginx.conf`:
+Настройки должны быть в `nginx.conf`:
 
     if ($filename ~* ^.*?\.(eot)|(ttf)|(woff)$){
         add_header Access-Control-Allow-Origin *;
