@@ -1,4 +1,5 @@
- <header></header><section class="left"><article>
+#Serving Fonts from CDN
+
 For maximum performance, we all know we must put our assets on CDN.  Along
 with those assets are custom web fonts.  Unfortunately custom web fonts via CDN 
 don't work in Firefox or Internet Explorer by default -- they require custom 
