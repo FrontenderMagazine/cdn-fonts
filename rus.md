@@ -6,16 +6,18 @@
 потребуются настройки <abbr title="Cross-origin resource sharing">CORS</abbr>. 
 Ниже вы сможете найти необходимый код.
 
-## Код для `.htaccess` или `httpd.conf`
+## Конфигурация Apache 
 
-Код должен быть в `.htaccess` или `httpd.conf`:
+Настройки должны быть быть в `.htaccess` или `httpd.conf`:
 
-    # конфигурация Apache 
     <FilesMatch ".(eot|ttf|otf|woff)">
         Header set Access-Control-Allow-Origin "*"
     </FilesMatch>
 
-    # конфигурация nginx
+## Конфигурация Nginx 
+
+Настройки должны быть быть в `nginx.conf`:
+
     if ($filename ~* ^.*?\.(eot)|(ttf)|(woff)$){
         add_header Access-Control-Allow-Origin *;
     }
