@@ -21,6 +21,8 @@
     if ($filename ~* ^.*?\.(eot)|(ttf)|(woff)$){
         add_header Access-Control-Allow-Origin *;
     }
+    
+_(Прим. ред.: Похоже, регулярное выражение не совсем верно, и имелось в виду `^.*?\.(eot|ttf|woff)$`)_
 
 Access-Control-Allow-Origin конфигурирует <abbr title="Cross-origin resource sharing">CORS</abbr> 
 так, чтобы было возможно получать файлы шрифтов с любого домена. Или вы можете 
